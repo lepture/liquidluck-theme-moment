@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 name = 'moment'
-version = '0.1'
+version = '0.2'
 author = {
     'name': 'Hsiaoming Yang',
     'website': 'http://lepture.com',

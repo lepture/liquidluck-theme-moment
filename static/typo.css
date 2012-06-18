@@ -6,7 +6,7 @@ html, body {
     font: 16px/1.62 "Lucida Grande", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, strong {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 h1 {
     margin-top: 0;
