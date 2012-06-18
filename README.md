@@ -61,7 +61,7 @@ theme_variables = {
 
 All in one:
 
-```
+```python
 theme_variables = {
     'navigation': [
         ('Home', '/'),
