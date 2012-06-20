@@ -5,7 +5,15 @@ This is the latest version of the default theme for Felix Felicis.
 
 ## Installation
 
-Place it in your blog:
+### Install with liquidluck
+
+```
+$ liquidluck install moment
+```
+
+### Install by yourself
+
+Git clone this repo, and place it in your blog:
 
 ```
 your_blog/
@@ -14,6 +22,8 @@ your_blog/
     _themes/
         moment/
 ```
+
+### Install with git submodule
 
 You can use git submodule for convience:
 
