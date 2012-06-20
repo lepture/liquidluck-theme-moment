@@ -72,3 +72,25 @@ theme_variables = {
     'disqus': 'your-disqus-shortname',
 }
 ```
+
+## 404
+
+You can create a file in your source directory (``content``) named ``404.md``.
+
+```
+# 404
+
+- template: 404.html
+
+----------------
+
+You content here.
+```
+
+Configure your nginx, add:
+
+```
+error_page 404 /404.html;
+```
+
+You can google for more information.
