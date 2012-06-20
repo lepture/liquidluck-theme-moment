@@ -2,6 +2,7 @@
 
 name = 'moment'
 version = '0.3'
+website = 'https://github.com/lepture/liquidluck-theme-moment'
 author = {
     'name': 'Hsiaoming Yang',
     'website': 'http://lepture.com',
