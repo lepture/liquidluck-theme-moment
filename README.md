@@ -1,5 +1,8 @@
 # Moment Theme for Felix Felicis
 
+This is the latest version of the default theme for Felix Felicis.
+
+
 ## Installation
 
 Place it in your blog:
