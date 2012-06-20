@@ -13,6 +13,7 @@ navigation = [
     ('About', '/about.html'),
 ]
 
+lang = 'en'
 twitter = 'lepture'
 github = None
 disqus = None
