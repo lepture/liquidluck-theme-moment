@@ -2,7 +2,7 @@
 @import url(//fonts.googleapis.com/css?family=PT%20Sans);
 html, body {
     background: #f4f4f4;
-    color: #333;
+    color: #444;
     padding: 0;
     margin: 0;
     font: 16px/1.62 "Signika", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
@@ -22,13 +22,10 @@ h3 {
     font-size: 18px;
     margin: 20px 0 5px;
 }
+h1, h2, h3, h4,
 h1 a, h2 a, h3 a {
     font-weight: normal;
 }
-h1 a:hover, h2 a:hover, h3 a:hover {
-    text-decoration: none;
-}
-
 
 /* block level */
 blockquote {
@@ -42,7 +39,6 @@ blockquote blockquote {
     margin-left: 2em;
     border-left: 0.4em solid #ddd;
 }
-
 p {
     font-weight: normal;
     line-height: 160%;
@@ -107,7 +103,7 @@ strong {
 
 /* code */
 pre, code, tt {
-    font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    font: 14px "Menlo", monospace;
 }
 pre {
     margin: 1em 0;
@@ -121,17 +117,16 @@ pre {
     border-radius: 3px;
 }
 pre code {
-    padding:0;
+    padding: 0;
     color: #444;
-    background-color: #eee;
     border: none;
 }
 code, tt {
-    font-size:12px;
+    font-size: 14px;
     background-color:#f8f8ff;
-    color:#d14;
-    padding:0 .2em;
-    border:1px solid #dedede;
+    color: #d14;
+    padding: 0 .2em;
+    border: 1px solid #dedede;
 }
 
 /* form */
