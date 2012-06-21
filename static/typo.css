@@ -1,9 +1,11 @@
+@import url(//fonts.googleapis.com/css?family=Signika);
+@import url(//fonts.googleapis.com/css?family=PT%20Sans);
 html, body {
     background: #f4f4f4;
     color: #333;
     padding: 0;
     margin: 0;
-    font: 16px/1.62 "Lucida Grande", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font: 16px/1.62 "Signika", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, strong {
     font-family: "PT Sans", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
@@ -151,17 +153,4 @@ hr.end {
     height: 10px;
     text-align: center;
     background: url("end.png") no-repeat 50% 50%;
-}
-#footer {
-    margin-bottom: 30px;
-    text-align: center;
-}
-#footer a {
-    margin: 0 30px;
-}
-.container {
-    max-width: 560px;
-    *width: 560px;
-    margin: 0 auto;
-    padding: 20px;
 }
