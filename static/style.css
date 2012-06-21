@@ -99,6 +99,9 @@
     overflow: hidden;
     font-family: 'Signika', 'Xin Gothic', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
 }
+.entry-title, .hentry h2, .hentry h3, .hentry h4 {
+    color: #222;
+}
 .entry-meta, .entry-meta a, .updated, .updated a {
     color: #999;
     font-size: 14px;

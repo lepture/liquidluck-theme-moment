@@ -72,6 +72,14 @@ theme_variables = {
 }
 ```
 
++ Show author information, default is False
+
+```
+theme_variables = {
+    show_author: False,
+}
+```
+
 All in one:
 
 ```python
