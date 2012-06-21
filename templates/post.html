@@ -9,8 +9,12 @@
         <time class="updated" datetime="{{post.date|xmldatetime}}">
             <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
+        {% if theme.show_author -%}
         {% if post.author.website -%}
         by <a href="{{post.author.website}}">{{post.author.name}}</a>
+        {% else -%}
+        by {{post.author.name}}
+        {%- endif %}
         {%- endif %}
     </div>
     <div class="entry-content">

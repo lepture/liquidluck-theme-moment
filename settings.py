@@ -9,6 +9,7 @@ author = {
 }
 
 
+show_author = False
 navigation = [
     ('Home', '/'),
     ('About', '/about.html'),
