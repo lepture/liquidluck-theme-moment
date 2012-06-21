@@ -12,12 +12,14 @@ h1, h2, h3, h4, h5, strong {
 }
 h1 {
     margin-top: 0;
-    font-size: 36px;
+    font-size: 28px;
 }
 h2 {
+    font-size: 22px;
     margin: 25px 0 5px;
 }
 h3 {
+    font-size: 18px;
     margin: 20px 0 5px;
 }
 h1 a, h2 a, h3 a {

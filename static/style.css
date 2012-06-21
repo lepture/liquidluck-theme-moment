@@ -120,32 +120,23 @@
 .entry-tags a:hover {
     background: #ddd;
 }
+.entry-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
 .entry-item {
-    line-height: 40px;
     margin: 12px 0;
     zoom: 1;
 }
-.entry-item:after {
-    display: block;
-    content: " ";
-    clear: both;
-    visibility: hidden;
-    height: 0;
-    font-size: 0;
+.entry-item a {
+    margin: 0.2em 1em;
 }
-.entry-item .updated {
-    float: left;
-    font-family: "Courier New", monospace;
-    margin-right: 28px;
+.entry-item-year {
+    margin-top: 24px;
 }
-.entry-item h3 {
-    float: left;
-    margin: 0;
-}
-@media (max-width: 400px) {
-    .entry-item .updated, .entry-item h3 {
-        float: none;
-    }
+.entry-item-year a {
+    margin-left: 0;
 }
 .pagination {
     position: relative;
