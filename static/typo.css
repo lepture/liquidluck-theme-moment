@@ -116,17 +116,18 @@ pre {
     box-shadow: rgba(0,0,0,0.07) 0 1px 2px inset;
     border-radius: 3px;
 }
-pre code {
-    padding: 0;
-    color: #444;
-    border: none;
-}
 code, tt {
     font-size: 14px;
     background-color:#f8f8ff;
     color: #d14;
     padding: 0 .2em;
     border: 1px solid #dedede;
+}
+pre code {
+    padding: 0;
+    color: #444;
+    border: none;
+    background: inherit;
 }
 
 /* form */
