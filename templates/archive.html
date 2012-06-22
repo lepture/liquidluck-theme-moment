@@ -8,7 +8,7 @@
     {% for item in pagination.items %}
     {%- if item.date.year != year %}
     {% set year = item.date.year -%}
-    <li class="entry-item entry-item-year">
+    <li class="entry-item entry-item-title">
     <a href="{{item|year_url}}">{{item.date.year}}</a>
     </li>
     {%- endif %}

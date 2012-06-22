@@ -136,10 +136,10 @@
 .entry-item a {
     margin: 0.2em 1em;
 }
-.entry-item-year {
+.entry-item-title {
     margin-top: 24px;
 }
-.entry-item-year a {
+.entry-item-title a {
     margin-left: 0;
 }
 .pagination {
@@ -159,6 +159,17 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+.tagcloud a {
+    display: inline-block;
+    margin: .2em .4em;
+    opacity: 0.6;
+}
+.tagcloud a:hover {
+    opacity: 1;
+}
+.tagcloud .count {
+    font-size: 12px;
 }
 #disqus_thread {
     margin-top: 50px;
