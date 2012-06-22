@@ -74,23 +74,24 @@ theme_variables = {
 
 + Show author information, default is False
 
-```
+```python
 theme_variables = {
-    show_author: False,
+    'show_author': True,
 }
 ```
 
-All in one:
++ Tagcloud support, active tagcloud:
 
 ```python
+writers = {
+    'tagcloud': 'liquidluck.writers.core.TagCloudWriter',
+    # disable tag writer
+    # 'tag': None,
+}
+
+# change post tags link to tagcloud
 theme_variables = {
-    'navigation': [
-        ('Home', '/'),
-        ('Life', '/life/'),
-        ('Work', '/work/'),
-    ],
-    'analytics': 'UA-xxxx',
-    'disqus': 'your-disqus-shortname',
+    'tagcloud': True,  # default is False
 }
 ```
 

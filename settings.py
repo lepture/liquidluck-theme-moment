@@ -10,6 +10,7 @@ author = {
 
 
 show_author = False
+tagcloud = False
 navigation = [
     ('Home', '/'),
     ('About', '/about.html'),
