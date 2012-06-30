@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 
 {% block title %}{{post.title}} - {{site.name}}{% endblock %}
+{% block afterstyle %}
+<link rel="canonical" href="{{post|permalink}}" />
+{% endblock %}
 
 {% block main -%}
 <div class="hentry">
