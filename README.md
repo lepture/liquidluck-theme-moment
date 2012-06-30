@@ -8,7 +8,7 @@ This is the latest version of the default theme for Felix Felicis.
 ### Install with liquidluck
 
 ```
-$ liquidluck install -t moment
+$ liquidluck install moment
 ```
 
 ### Install by yourself
