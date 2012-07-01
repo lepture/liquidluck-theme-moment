@@ -44,6 +44,7 @@
     position: relative;
     max-width: 560px;
     *width: 560px;
+    height: 46px;
     margin: 0 auto;
     background: #fff;
     z-index: 9;
@@ -61,6 +62,20 @@
     color: #d00;
     border-top: 6px solid #d14;
     margin-top: -6px;
+}
+#nav select {
+    margin-top: 8px;
+    font-size: 16px;
+}
+@media (max-width: 480px) {
+    #brand a {
+        color: rgba(0,0,0,0.8);
+    }
+    #nav {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
 }
 #main {
     clear: both;

@@ -18,3 +18,32 @@
     doc[addEvent](type, fix, true);
   }
 }(document));
+
+// fix navigation for mobile
+(function(d) {
+    if (!d.querySelectorAll || d.body.clientWidth > 560) {
+        return;
+    }
+    var nav = d.getElementById('nav');
+    var links = nav.querySelectorAll('a');
+    var select = d.createElement('select');
+    for (var i = 0; i < links.length; i++) {
+        var link = links[i];
+        var option = createOption(link.innerHTML, link.href);
+        nav.removeChild(link);
+        select.appendChild(option);
+    }
+    select.onchange = function() {
+        location.href = select.value;
+    }
+    nav.appendChild(select);
+
+    function createOption(name, link) {
+        var option = d.createElement('option');
+        option.value = link; option.innerHTML = name;
+        if (location.href == link) {
+            option.selected = true;
+        }
+        return option;
+    }
+}(document));
