@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 name = 'moment'
-version = '0.7'
+version = '0.8'
 website = 'https://github.com/lepture/liquidluck-theme-moment'
 author = {
     'name': 'Hsiaoming Yang',
