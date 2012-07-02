@@ -24,9 +24,10 @@
     if (!d.querySelectorAll || d.body.clientWidth > 560) {
         return;
     }
-    var nav = d.getElementById('nav');
+    var nav = d.getElementById('Nav');
     var links = nav.querySelectorAll('a');
     var select = d.createElement('select');
+    select.appendChild(createOption('nav', '#'));
     for (var i = 0; i < links.length; i++) {
         var link = links[i];
         var option = createOption(link.innerHTML, link.href);
