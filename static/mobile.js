@@ -24,7 +24,7 @@
     if (!d.querySelectorAll || d.body.clientWidth > 560) {
         return;
     }
-    var nav = d.getElementById('Nav');
+    var nav = d.getElementById('nav');
     var links = nav.querySelectorAll('a');
     var select = d.createElement('select');
     select.appendChild(createOption('nav', '#'));
