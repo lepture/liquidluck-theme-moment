@@ -33,6 +33,7 @@
         {%- endfor %}
     </div>
     {% if theme.disqus -%}
+    {%- if theme.allow_comment_on_secret_post or post.public %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = '{{theme.disqus}}';
@@ -43,6 +44,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
+    {% endif -%}
     {%- endif %}
 </div>
 {%- endblock %}

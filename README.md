@@ -116,3 +116,12 @@ error_page 404 /404.html;
 ```
 
 You can google for more information.
+
+## Allow comment
+
+If you post is not public, this post will not be allowed to comment.
+If you want to allow people to comment on your secret post, set
+
+```python
+allow_comment_on_secret_post = True
+```
