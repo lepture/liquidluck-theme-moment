@@ -267,7 +267,7 @@ hr.end {
 .entry-title, .hentry h2, .hentry h3, .hentry h4 {
     color: #222;
 }
-.entry-meta, .entry-meta a, .updated, .updated a {
+.entry-meta, .entry-meta a, .updated, .updated a , .entry-review {
     color: #999;
     font-size: 14px;
 }

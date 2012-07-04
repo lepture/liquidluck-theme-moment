@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block main -%}
-<div class="hentry">
+<div class="hentry"{%if post.review%} itemscope itemtype="http://schema.org/Review"{%endif%}>
     <h1 class="entry-title">{{post.title}}</h1>
     <div class="entry-meta">
-        <time class="updated" datetime="{{post.date|xmldatetime}}">
+        <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%}>
             <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
         {% if theme.show_author -%}
@@ -18,11 +18,18 @@
         {% else -%}
         by {{post.author.name}}
         {%- endif %}
-        {%- endif %}
+        {%- endif -%}
     </div>
-    <div class="entry-content">
+    <div class="entry-content"{%if post.review%} itemprop="description"{%endif%}>
         {{post.content}}
     </div>
+
+    {% if post.review %}
+    <div class="entry-review">
+        <span itemprop="itemreviewed">{{post.review}}</span> Reviewed by <span itemprop="reviewer">{{post.author.name}}</span> {%if post.rating%} Rating <span itemprop="rating">{{post.rating}}</span>{%endif%}
+    </div>
+    {% endif %}
+
     <div class="entry-tags">
         {% for tag in post.tags -%}
         {%- if theme.tagcloud -%}
@@ -32,6 +39,7 @@
         {%- endif %}
         {%- endfor %}
     </div>
+
     {% if theme.disqus -%}
     {%- if theme.allow_comment_on_secret_post or post.public %}
     <div id="disqus_thread"></div>
