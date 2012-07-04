@@ -9,7 +9,7 @@
 <div class="hentry"{%if post.review%} itemscope itemtype="http://data-vocabulary.org/Review"{%endif%}>
     <h1 class="entry-title">{{post.title}}</h1>
     <div class="entry-meta">
-        <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%}>
+        <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%} pubdate>
             <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
         <span class="author vcard">

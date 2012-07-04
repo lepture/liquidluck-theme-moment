@@ -72,14 +72,6 @@ theme_variables = {
 }
 ```
 
-+ Show author information, default is False
-
-```python
-theme_variables = {
-    'show_author': True,
-}
-```
-
 + Tagcloud support, active tagcloud:
 
 ```python
