@@ -6,19 +6,17 @@
 {% endblock %}
 
 {% block main -%}
-<div class="hentry"{%if post.review%} itemscope itemtype="http://schema.org/Review"{%endif%}>
+<div class="hentry"{%if post.review%} itemscope itemtype="http://data-vocabulary.org/Review"{%endif%}>
     <h1 class="entry-title">{{post.title}}</h1>
     <div class="entry-meta">
         <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%}>
             <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
-        {% if theme.show_author -%}
         {% if post.author.website -%}
         by <a href="{{post.author.website}}">{{post.author.name}}</a>
         {% else -%}
         by {{post.author.name}}
         {%- endif %}
-        {%- endif -%}
     </div>
     <div class="entry-content"{%if post.review%} itemprop="description"{%endif%}>
         {{post.content}}
