@@ -12,11 +12,13 @@
         <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%}>
             <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
-        {% if post.author.website -%}
-        by <a href="{{post.author.website}}">{{post.author.name}}</a>
-        {% else -%}
-        by {{post.author.name}}
-        {%- endif %}
+        <span class="author vcard">
+            {% if post.author.website -%}
+            by <a class="url fn" href="{{post.author.website}}">{{post.author.name}}</a>
+            {% else -%}
+            by <span class="fn">{{post.author.name}}</span>
+            {%- endif %}
+        </span>
     </div>
     <div class="entry-content"{%if post.review%} itemprop="description"{%endif%}>
         {{post.content}}
