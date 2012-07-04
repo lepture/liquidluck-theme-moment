@@ -9,18 +9,21 @@ author = {
 }
 
 
-show_author = False
+lang = 'en'
 tagcloud = False
+
 navigation = [
     ('Home', '/'),
     ('About', '/about.html'),
 ]
 
-lang = 'en'
 twitter = 'lepture'
 github = None
 disqus = None
 analytics = None
 
-
 allow_comment_on_secret_post = False
+
+
+#: key-value descriptions
+descriptions = {}

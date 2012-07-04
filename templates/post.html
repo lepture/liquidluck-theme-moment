@@ -3,6 +3,7 @@
 {% block title %}{{post.title}} - {{site.name}}{% endblock %}
 {% block afterstyle %}
 <link rel="canonical" href="{{post|permalink}}" />
+{% if post.summary %}<meta name="description" content="{{post.summary}}" />{% endif %}
 {% endblock %}
 
 {% block main -%}
@@ -26,7 +27,7 @@
 
     {% if post.review %}
     <div class="entry-review">
-        <span itemprop="itemreviewed">{{post.review}}</span> Reviewed by <span itemprop="reviewer">{{post.author.name}}</span> {%if post.rating%} Rating <span itemprop="rating">{{post.rating}}</span>{%endif%}
+        <span itemprop="itemreviewed">{{post.review}}</span> Reviewed by <span itemprop="reviewer">{{post.author.name}}</span> {%if post.rating%}, Rating <span itemprop="rating">{{post.rating}}</span>{%endif%}
     </div>
     {% endif %}
 
