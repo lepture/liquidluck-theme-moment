@@ -1,10 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Signika);
-@import url(//fonts.googleapis.com/css?family=PT%20Sans);
-html, body {
+@import url(//fonts.googleapis.com/css?family=Rosario);
+@import url(//fonts.googleapis.com/css?family=PT+Sans);
+body {
     color: #444;
     padding: 0;
     margin: 0;
-    font: 16px/1.62 "Signika", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font: 16px/1.62 "Rosario", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, strong {
     font-family: "PT Sans", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
@@ -263,7 +263,7 @@ hr.end {
 /* article */
 .hentry {
     overflow: hidden;
-    font-family: 'Signika', 'Xin Gothic', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+    font-family: 'Rosario', 'Xin Gothic', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
 }
 .entry-title, .hentry h2, .hentry h3, .hentry h4 {
     color: #222;
