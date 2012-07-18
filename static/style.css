@@ -299,6 +299,9 @@ hr.end {
 .entry-item a {
     margin: 0.2em 1em;
 }
+.entry-item .updated {
+    font-family: "Luxi Sans", "Lucida Grande", Arial, sans-serif;
+}
 .entry-item-title {
     margin-top: 24px;
 }
