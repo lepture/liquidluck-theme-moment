@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 name = 'moment'
-version = '0.10'
+version = '0.11'
 website = 'https://github.com/lepture/liquidluck-theme-moment'
 author = {
     'name': 'Hsiaoming Yang',
@@ -12,8 +12,8 @@ author = {
 lang = 'en'
 
 navigation = [
-    ('Home', '/'),
-    ('About', '/about.html'),
+    {'title': 'Home', 'link': '/'},
+    {'title': 'About', 'link': '/about.html'},
 ]
 
 twitter = 'lepture'
