@@ -5,7 +5,7 @@ This is the latest version of the default theme for Felix Felicis.
 
 ## Installation
 
-Requires Felix Felicis 3.0+
+Requires Felix Felicis 3.4+
 
 
 ### Install with liquidluck
