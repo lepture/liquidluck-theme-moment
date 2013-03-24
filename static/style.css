@@ -96,36 +96,33 @@ strong {
     color: #424242;
 }
 
-/* code */
-pre, code, tt {
-    font: 14px "Menlo", monospace;
+/* code and pre */
+code,
+tt {
+  color: #808080;
+  font-size: 14px;
+  background-color: #f9f9f7;
+  padding: 1px 2px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  font-family: "Inconsolata", "Menlo", monospace;
 }
 pre {
-    margin: 1em 0;
-    background-color: #fbfbfb;
-    border: 1px solid #ddd;
-    padding: 8px;
-    line-height: 1.5em;
-    color: #444;
-    overflow: auto;
-    box-shadow: rgba(0,0,0,0.07) 0 1px 2px inset;
-    border-radius: 3px;
-}
-code, tt {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+  padding: 7px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  overflow: auto;
+  font: 400 14px/1.5 "Inconsolata", "Menlo", monospace;
+  color: #4c4c4c;
+  background-color: #f9f9f7;
 }
 pre code {
-    padding: 0;
-    color: #444;
-    border: none;
-    background: inherit;
+  color: #4c4c4c;
+  border: none;
+  background-color: none;
+  padding: auto;
 }
+
 
 /* form */
 textarea, input {
