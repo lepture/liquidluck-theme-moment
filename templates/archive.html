@@ -1,29 +1,29 @@
 {% extends "layout.html" %}
 
-{% block title %}{{pagination.title|title}} - {{site.name}}{% endblock %}
+{% block title %}{{pagination.title|string|title}} - {{site.name}}{% endblock %}
 
 {% block afterstyle %}
 <meta name="description" content="{{pagination.title|description}}" />
 {% endblock %}
 
 {% block main %}
-<ul class="entry-list">
+<div class="entry-list">
     {% set year = 0 -%}
     {% for item in pagination.items %}
     {%- if item.date.year != year %}
     {% set year = item.date.year -%}
-    <li class="entry-item entry-item-title">
-    <a href="{{item|year_url}}">{{item.date.year}}</a>
-    </li>
+    <h3 class="entry-item-title">
+      <a href="{{item|year_url}}">{{item.date.year}}</a>
+    </h3>
     {%- endif %}
-    <li class="entry-item">
+    <div class="entry-item">
         <time class="updated" datetime="{{item.date|xmldatetime}}">{{item.date.strftime('%Y-%m-%d')}}</time>
         <a href="{{item|permalink}}">{{item.title}}</a>
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>
 {% if pagination.has_prev or pagination.has_next %}
-<hr class="end" />
+<div class="end"></div>
 <nav class="pagination" role="pagination">
     {% if pagination.has_prev %}
     <a class="prev" href="{{ content_url(pagination.root, 'page', pagination.prev_num) }}">«Prev</a>
